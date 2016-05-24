@@ -1,0 +1,9 @@
+# Disable the server signature
+ServerSignature Off
+
+# Disable directory browsing
+Options -Indexes
+
+# Forbid the .svn directory
+RewriteEngine On
+RewriteRule ^.svn(.*)$ / [F]
